@@ -1,0 +1,42 @@
+/* General Styles */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #eef2f7;
+  margin: 0;
+  padding: 0;
+}
+
+/* Main Container Layout */
+.container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 40px; /* Increased gap */
+  width: 90%;
+  max-width: 1200px;
+  margin: 40px auto; /* More vertical spacing */
+  align-items: start;
+}
+
+/* Ensure custom elements have proper display */
+welcome-screen {
+  display: block;
+  width: 100%;
+}
+
+note-form {
+  position: sticky;
+  top: 20px;
+  height: fit-content;
+}
+
+notes-container {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+:host {
+  display: block;
+  width: 100%;
+}
